@@ -5,7 +5,7 @@ import io
 
 #st.header("SQL SRS")
 st.write("""
-         # SQL SRS
+         # SQL SRS Pierre
          Spaced Repetition System SQL practice
          """)
 
