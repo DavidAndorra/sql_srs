@@ -31,9 +31,3 @@ with tab1:
     st.write("New dataframe")
     new_df = duckdb.sql(input_text)
     st.dataframe(new_df)
-
-with tab2 :
-    st.header("tab2")
-
-with tab2 :
-    st.header("tab3")
