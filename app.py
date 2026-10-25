@@ -51,6 +51,14 @@ if query:
     result = duckdb.sql(query)
     st.dataframe(result)
 
+    if(len(result.columns)!= len(st.dataframe(solution))):
+        st.write("Number of columns is different")
+
+    n_lines_difference = result.shape[0] - solution.shape[0]
+    if n_lines_difference != 0:
+        st.write(f"result has a {n_lines_difference} lines")
+
+
 tab1, tab2 = st.tabs(["Tables","Solution"])
 
 
